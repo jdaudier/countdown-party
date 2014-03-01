@@ -3,5 +3,16 @@ extends layout
 block content
   header
   .logo Countdown Party
-  input(type='text', name='datepicker', class='datepicker', placeholder='Pick a date')
-  input(type='text', name='timepicker', class='timepicker', placeholder='Pick a time')
+  .ui.large.form.segment
+    .field
+      input(type='text', name='eventname', class='event', placeholder='Name of your event')
+    .two.fields
+      .field
+        input(type='text', name='datepicker', class='datepicker', placeholder='Pick a date')
+      .field
+        input(type='text', name='timepicker', class='timepicker', placeholder='Pick a time')
+    .fluid.ui.blue.submit.button Count Down
+    .ui.error.message
+  footer
+    span Cobbled together by
+      a(href='http://www.twitter.com/jdaudier' target= '_BLANK') Joanne
