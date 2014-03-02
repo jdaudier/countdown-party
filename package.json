@@ -8,10 +8,6 @@
   "dependencies": {
     "express": "3.4.0",
     "jade": "*",
-    "stylus": "*",
-    "bower": "*"
-  },
-  "scripts": {
-    "postinstall": "./node_modules/bower/bin/bower install"
+    "stylus": "*"
   }
 }
