@@ -1,9 +1,8 @@
 extends layout
 
 block content
-  header
   .logo Countdown Party
-  .ui.large.form.segment
+  form.ui.large.form.segment(action='/countdown', method="post")
     .field.input.ui.huge
       input(type='text', name='eventname', class='event', placeholder='Name of your event')
     .two.fields

@@ -5,7 +5,6 @@
 
 var express = require('express');
 var routes = require('./routes');
-var user = require('./routes/user');
 var http = require('http');
 var path = require('path');
 
@@ -29,7 +28,15 @@ if ('development' == app.get('env')) {
 }
 
 app.get('/', routes.index);
-app.get('/users', user.list);
+
+app.post('/countdown', function(req, res) {
+  var data = {
+      name: req.body.eventname,
+      date: req.body.datepicker_submit,
+      time: req.body.timepicker_submit
+  };
+  res.render('countdown', data)
+});
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));

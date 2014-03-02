@@ -1,11 +1,12 @@
 $(document).ready(function(){
-    $('.datepicker').pickadate({
+    var date = $('.datepicker').pickadate({
         format: 'mmm dd, yyyy',
         formatSubmit: 'mm/dd/yyyy'
     });
 
-    $('.timepicker').pickatime();
-
+    var time = $('.timepicker').pickatime({
+        formatSubmit: 'H:i'
+    });
 
     $('.ui.form')
         .form({
@@ -37,4 +38,38 @@ $(document).ready(function(){
                 ]
             }
         });
+
+
+
+
+
+
+    // http://codesarc.blogspot.com/2014/02/javascript-countdown-for-remaining-time.html
+    var target_date = new Date(date + ' ' + time).getTime();
+    var days, hours, minutes, seconds;
+
+    var countDown = function () {
+        var current_date = new Date().getTime();
+        var seconds_left = (target_date - current_date) / 1000;
+        days = parseInt(seconds_left / 86400);
+        seconds_left = seconds_left % 86400;
+
+        hours = parseInt(seconds_left / 3600);
+        seconds_left = seconds_left % 3600;
+
+        minutes = parseInt(seconds_left / 60);
+        seconds = parseInt(seconds_left % 60);
+        $("#days").html(days);
+        $("#hours").html(hours);
+        $("#min").html(minutes);
+        $("#sec").html(seconds);
+    };
+
+    setInterval(countDown, 1000);
+
+
+
+
+
+
 });
