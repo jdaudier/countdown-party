@@ -4,14 +4,17 @@ block content
   header
   .logo Countdown Party
   .ui.large.form.segment
-    .field
+    .field.input.ui.huge
       input(type='text', name='eventname', class='event', placeholder='Name of your event')
     .two.fields
-      .field
+      .date.field.input.ui.huge
+        label
         input(type='text', name='datepicker', class='datepicker', placeholder='Pick a date')
-      .field
+      .field.icon.input.ui.huge
+        label
         input(type='text', name='timepicker', class='timepicker', placeholder='Pick a time')
-    .fluid.ui.blue.submit.button Count Down
+        i.time.icon
+    .fluid.ui.blue.submit.button.huge Count Down
     .ui.error.message
   footer
     span Cobbled together by
