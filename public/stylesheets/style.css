@@ -87,3 +87,6 @@ footer a:hover {
   visibility: hidden;
   float: left;
 }
+.ui.form .picker__header {
+  margin-top: 0.75em;
+}

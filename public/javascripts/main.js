@@ -1,7 +1,9 @@
 $(document).ready(function(){
     $('.datepicker').pickadate({
         format: 'mmm dd, yyyy',
-        formatSubmit: 'mm/dd/yyyy'
+        formatSubmit: 'mm/dd/yyyy',
+        selectYears: true,
+        selectMonths: true
     });
 
     $('.timepicker').pickatime({
