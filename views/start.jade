@@ -1,0 +1,23 @@
+extends layout
+block content
+    .logo Countdown to #{name}
+        .eventname #{origDate} @ #{origTime}
+    .ui.top.attached.center.aligned.segment
+        span#days.ui.blue.circular.huge.label.odometer
+        span.unit Days
+    .ui.attached.center.aligned.segment
+        span#hours.ui.blue.circular.huge.label.odometer
+        span.unit Hours
+    .ui.attached.center.aligned.segment
+        span#min.ui.blue.circular.huge.label.odometer
+        span.unit Minutes
+    .ui.bottom.attached.center.aligned.segment
+        span#sec.ui.blue.circular.huge.label.odometer
+        span.unit Seconds
+    .reset
+        .ui.tiny.circular.button
+            i.refresh.icon
+            | Reset
+    .hidden
+        span.date #{date}
+        span.time #{time}
