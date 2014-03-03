@@ -14,7 +14,7 @@ var app = express();
 app.set('port', process.env.PORT || 3000);
 app.set('views', __dirname + '/views');
 app.set('view engine', 'jade');
-app.use(express.favicon());
+app.use(express.favicon(path.join(__dirname, 'public/images/favicon.ico')));
 app.use(express.logger('dev'));
 app.use(express.bodyParser());
 app.use(express.methodOverride());
@@ -29,13 +29,15 @@ if ('development' == app.get('env')) {
 
 app.get('/', routes.index);
 
-app.post('/countdown', function(req, res) {
+app.get('/start', function(req, res) {
   var data = {
-      name: req.body.eventname,
-      date: req.body.datepicker_submit,
-      time: req.body.timepicker_submit
+      name: req.query.eventname,
+      date: req.query.datepicker_submit,
+      time: req.query.timepicker_submit,
+      origDate: req.query.datepicker,
+      origTime: req.query.timepicker
   };
-  res.render('countdown', data)
+  res.render('start', data);
 });
 
 http.createServer(app).listen(app.get('port'), function(){

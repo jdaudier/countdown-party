@@ -6,7 +6,7 @@
   box-sizing: border-box;
 }
 body {
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 0.9em 'Open Sans', sans-serif;
   margin: 0;
   padding-bottom: 2em;
   background: #e9fafe;
@@ -43,8 +43,10 @@ header {
   top: 0.75em;
 }
 footer {
+  padding-top: 1.5em;
   text-align: center;
   color: #778090;
+  font-weight: 300;
 }
 footer a {
   margin-left: 0.5em;
@@ -52,4 +54,36 @@ footer a {
 }
 footer a:hover {
   text-decoration: underline;
+}
+.eventname {
+  font-size: 0.45em;
+  font-family: 'Codystar', cursive;
+  letter-spacing: 0.15em;
+}
+.ui.top.attached.center.aligned.segment {
+  margin-top: 2em;
+}
+.ui.center.segment {
+  max-width: 650px;
+  margin: 0 auto;
+}
+.ui.blue.circular.huge.label {
+  font-size: 2em;
+  margin-right: 1em;
+}
+.unit {
+  text-transform: uppercase;
+  font-size: 2em;
+  font-weight: 800;
+  color: #778090;
+  vertical-align: middle;
+}
+.reset {
+  max-width: 650px;
+  margin: 0 auto;
+  text-align: right;
+}
+.hidden {
+  visibility: hidden;
+  float: left;
 }

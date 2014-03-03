@@ -2,7 +2,7 @@ extends layout
 
 block content
   .logo Countdown Party
-  form.ui.large.form.segment(action='/countdown', method="post")
+  form.ui.large.form.segment(action='/start')
     .field.input.ui.huge
       input(type='text', name='eventname', class='event', placeholder='Name of your event')
     .two.fields
@@ -15,6 +15,3 @@ block content
         i.time.icon
     .fluid.ui.blue.submit.button.huge Count Down
     .ui.error.message
-  footer
-    span Cobbled together by
-      a(href='http://www.twitter.com/jdaudier' target= '_BLANK') Joanne

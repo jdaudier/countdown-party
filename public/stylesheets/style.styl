@@ -1,5 +1,6 @@
-light-blue = #E9FAFE
-gold = #FCBD55
+$light-blue = #E9FAFE
+$gold = #FCBD55
+$aqua = #00B7FF
 
 *, *:before, *:after
   -moz-box-sizing border-box
@@ -7,17 +8,17 @@ gold = #FCBD55
   box-sizing border-box
 
 body
-  font 14px "Lucida Grande", Helvetica, Arial, sans-serif
+  font .9em 'Open Sans', sans-serif
   margin 0
   padding-bottom 2em
-  background light-blue
+  background $light-blue
 
 a
-  color #00B7FF
+  color $aqua
 
 header
   height 200px
-  background url("/images/bunting-flag.png") repeat-x
+  background url('/images/bunting-flag.png') repeat-x
 
 .logo
   font 60px 'Sacramento', cursive;
@@ -44,8 +45,10 @@ header
   top .75em
 
 footer
+  padding-top 1.5em
   text-align center
   color slategray
+  font-weight 300
 
 footer a
   margin-left .5em
@@ -53,3 +56,35 @@ footer a
 
 footer a:hover
   text-decoration underline
+
+.eventname
+  font-size .45em
+  font-family 'Codystar', cursive
+  letter-spacing .15em
+
+.ui.top.attached.center.aligned.segment
+  margin-top 2em
+
+.ui.center.segment
+  max-width 650px
+  margin 0 auto
+
+.ui.blue.circular.huge.label
+  font-size 2em
+  margin-right 1em
+
+.unit
+  text-transform uppercase
+  font-size 2em
+  font-weight 800
+  color slategray
+  vertical-align middle
+
+.reset
+  max-width 650px
+  margin 0 auto
+  text-align right
+
+.hidden
+  visibility hidden
+  float left
