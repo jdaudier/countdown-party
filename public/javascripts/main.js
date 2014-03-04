@@ -3,7 +3,8 @@ $(document).ready(function(){
         format: 'mmm dd, yyyy',
         formatSubmit: 'mm/dd/yyyy',
         selectYears: true,
-        selectMonths: true
+        selectMonths: true,
+        min: true
     });
 
     $('.timepicker').pickatime({
