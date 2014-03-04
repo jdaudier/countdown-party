@@ -55,21 +55,22 @@ footer a {
 footer a:hover {
   text-decoration: underline;
 }
+/************START PAGE************/
 .eventname {
   font-size: 0.45em;
   font-family: 'Codystar', cursive;
   letter-spacing: 0.15em;
 }
-.ui.top.attached.center.aligned.segment {
+.ui.top.attached.segment {
   margin-top: 2em;
 }
-.ui.center.segment {
+.ui.attached.segment {
   max-width: 650px;
   margin: 0 auto;
 }
-.ui.blue.circular.huge.label {
+.ui.blue.circular.label {
   font-size: 2em;
-  margin-right: 1em;
+  margin-right: 0.6em;
 }
 .unit {
   text-transform: uppercase;
@@ -89,4 +90,7 @@ footer a:hover {
 }
 .ui.form .picker__header {
   margin-top: 0.75em;
+}
+.ui.grid>.column {
+  margin: 0;
 }

@@ -2,18 +2,30 @@ extends layout
 block content
     .logo Countdown to #{name}
         .eventname #{origDate} @ #{origTime}
-    .ui.top.attached.center.aligned.segment
-        span#days.ui.blue.circular.huge.label.odometer
-        span.unit Days
-    .ui.attached.center.aligned.segment
-        span#hours.ui.blue.circular.huge.label.odometer
-        span.unit Hours
-    .ui.attached.center.aligned.segment
-        span#min.ui.blue.circular.huge.label.odometer
-        span.unit Minutes
-    .ui.bottom.attached.center.aligned.segment
-        span#sec.ui.blue.circular.huge.label.odometer
-        span.unit Seconds
+    .ui.top.attached.segment
+        .ui.two.column.grid
+            .column.right.aligned
+                span#days.ui.blue.circular.huge.label.odometer
+            .column
+                span.unit Days
+    .ui.attached.segment
+        .ui.two.column.grid
+            .column.right.aligned
+                span#hours.ui.blue.circular.huge.label.odometer
+            .column
+                span.unit Hours
+    .ui.attached.segment
+        .ui.two.column.grid
+            .column.right.aligned
+                span#min.ui.blue.circular.huge.label.odometer
+            .column
+                span.unit Minutes
+    .ui.bottom.attached.segment
+        .ui.two.column.grid
+            .column.right.aligned
+                span#sec.ui.blue.circular.huge.label.odometer
+            .column
+                span.unit Seconds
     .reset
         .ui.tiny.circular.button
             i.refresh.icon
