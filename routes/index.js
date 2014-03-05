@@ -4,5 +4,5 @@
  */
 
 exports.index = function(req, res){
-  res.render('index', { title: 'Countdown Party: Countdown timer to your event' });
+  res.render('index', { title: 'Countdown timer to your event' });
 };
