@@ -63,24 +63,21 @@ $(document).ready(function(){
 
             minutes = parseInt(seconds_left / 60);
             seconds = parseInt(seconds_left % 60);
-            $("#days").html(days);
-            $("#hours").html(hours);
-            $("#min").html(minutes);
-            $("#sec").html(seconds);
+
+            if (days >= 0 && hours >= 0 && minutes >= 0 && seconds >= 0) {
+                $("#days").html(days);
+                $("#hours").html(hours);
+                $("#min").html(minutes);
+                $("#sec").html(seconds);
+            } else  {
+                clearInterval(myTimer);
+                setTimeout(function(){
+                    $('.modal')
+                        .modal('show');
+                },1000);
+            }
         };
 
-        setInterval(countDown, 1000);
-
-
+        var myTimer = setInterval(countDown, 1000);
     }
-
-
-
-
-
-
-
-
-
-
 });

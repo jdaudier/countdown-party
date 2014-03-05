@@ -97,6 +97,17 @@ footer a:hover {
 .ui.two.column.grid>.column {
   width: 55%;
 }
+.ui.small.modal {
+  width: 54%;
+}
+.ui.small.modal>.header {
+  font-weight: 700;
+  font-size: 1.6em;
+  padding-right: 3.7rem;
+}
+.ui.dimmer {
+  line-height: 1.5;
+}
 /*Datepicker fix for dropdown menu*/
 .ui.form .picker__header {
   margin-top: 0.75em;
