@@ -10,3 +10,5 @@ http://codesarc.blogspot.com/2014/02/javascript-countdown-for-remaining-time.htm
 Odometer
 http://github.hubspot.com/odometer/docs/welcome/
 
+pickadate.js
+http://amsul.ca/pickadate.js/index.htm
