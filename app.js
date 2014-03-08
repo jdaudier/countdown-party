@@ -35,8 +35,10 @@ app.get('/start', function(req, res) {
       date: req.query.datepicker_submit,
       time: req.query.timepicker_submit,
       origDate: req.query.datepicker,
-      origTime: req.query.timepicker
+      origTime: req.query.timepicker,
+      url: req.query.eventurl
   };
+  console.log('data: ', data);
   res.render('start', data);
 });
 

@@ -1,7 +1,12 @@
 extends layout
 block content
-    .logo Countdown to #{name}
-        .eventname #{origDate} @ #{origTime}
+    .logo Countdown to
+        if url
+            span.eventname
+                a(href=url, target="_BLANK") #{name}
+        else
+            span.eventname #{name}
+        .event #{origDate} @ #{origTime}
     .ui.top.attached.segment
         .ui.two.column.grid
             .column.right.aligned

@@ -4,7 +4,7 @@ block content
   .logo Countdown Party
   form.ui.large.form.segment(action='/start')
     .field.input.ui.huge
-      input(type='text', name='eventname', class='event', placeholder='Name of your event')
+      input(type='text', name='eventname', placeholder='Name of your event')
     .two.fields
       .date.field.input.ui.huge
         label
@@ -13,5 +13,7 @@ block content
         label
         input(type='text', name='timepicker', class='timepicker', placeholder='Pick a time')
         i.time.icon
+    .field.input.ui.huge
+        input(type='url', name='eventurl', class='eventurl', placeholder='Link to the event (optional)')
     .fluid.ui.blue.submit.button.huge Count Down
     .ui.error.message
