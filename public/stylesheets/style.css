@@ -97,13 +97,26 @@ footer a:hover {
 .ui.two.column.grid>.column {
   width: 55%;
 }
+.ui.huge.image {
+  width: 100%;
+}
 .ui.small.modal {
   width: 54%;
+}
+@media only screen and (max-width: 998px) {
+  .ui.small.modal {
+    width: 90%;
+  }
 }
 .ui.small.modal>.header {
   font-weight: 700;
   font-size: 1.6em;
   padding-right: 3.7rem;
+}
+@media only screen and (max-width: 998px) {
+  .ui.modal>.close {
+    color: #fff;
+  }
 }
 .ui.dimmer {
   line-height: 1.5;

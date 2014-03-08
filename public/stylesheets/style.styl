@@ -1,6 +1,9 @@
 $light-blue = #E9FAFE
 $gold = #FCBD55
 $aqua = #00B7FF
+mw30 = "only screen and (min-width: 30em)"
+mw60 = "only screen and (min-width: 60em)"
+mw998 = "only screen and (max-width: 998px)"
 
 *, *:before, *:after
   -moz-box-sizing border-box
@@ -99,13 +102,23 @@ footer a:hover
 .ui.two.column.grid>.column
   width 55%
 
+.ui.huge.image
+  width 100%
+
 .ui.small.modal
   width 54%
+
+  @media mw998
+    width 90%
 
 .ui.small.modal>.header
   font-weight 700
   font-size 1.6em
   padding-right 3.7rem
+
+@media mw998
+  .ui.modal>.close
+    color: white
 
 .ui.dimmer
   line-height 1.5
