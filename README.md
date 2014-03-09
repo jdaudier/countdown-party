@@ -26,7 +26,7 @@ Countdown Party is a modern countdown timer to help you count down to any day. Y
 * [CodesArc Programming Tutorials](http://codesarc.blogspot.com/2014/02/javascript-countdown-for-remaining-time.html): I referenced this _Javascript Countdown For Remaining Time_ tutorial for the countdown feature. I added some logic to prevent the timer from counting down pass 0 and a modal to congratulate the user when the time is up.
 
 ### Future Features
-* Ability to sign up to receive a daily email reminder
+* Ability to receive a daily email reminder
 
 ### Inspiration
 * [It's Almost](http://itsalmo.st)
