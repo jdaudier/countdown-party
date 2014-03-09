@@ -55,6 +55,10 @@ footer a {
 footer a:hover {
   text-decoration: underline;
 }
+.heart {
+  color: #ff8da1;
+  margin-left: 0.5em;
+}
 /************START PAGE************/
 .eventname {
   margin-left: 0.33em;
