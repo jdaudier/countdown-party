@@ -11,6 +11,50 @@ $(document).ready(function(){
         formatSubmit: 'H:i'
     });
 
+    $('.submit').click(function() {
+        if ($('.eventurl').val()) {
+            $('.ui.form')
+                .form({
+                    eventName: {
+                        identifier  : 'eventname',
+                        rules: [
+                            {
+                                type   : 'empty',
+                                prompt : 'Please enter your event name'
+                            }
+                        ]
+                    },
+                    datePicker: {
+                        identifier  : 'datepicker',
+                        rules: [
+                            {
+                                type   : 'empty',
+                                prompt : 'Please pick a date'
+                            }
+                        ]
+                    },
+                    timePicker: {
+                        identifier : 'timepicker',
+                        rules: [
+                            {
+                                type   : 'empty',
+                                prompt : 'Please pick a time'
+                            }
+                        ]
+                    },
+                    eventURL: {
+                        identifier: 'eventurl',
+                        rules: [
+                            {
+                                type: 'url',
+                                prompt: 'Please enter a valid URL including \'http://\''
+                            }
+                        ]
+                    }
+                });
+        }
+    });
+
     $('.ui.form')
         .form({
             eventName: {
