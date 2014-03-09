@@ -49,7 +49,7 @@ footer {
   font-weight: 300;
 }
 footer a {
-  margin-left: 0.5em;
+  margin-left: 0.4em;
   text-decoration: none;
 }
 footer a:hover {
@@ -57,7 +57,7 @@ footer a:hover {
 }
 .heart {
   color: #ff8da1;
-  margin-left: 0.5em;
+  margin-left: 0.4em;
 }
 /************START PAGE************/
 .eventname {
