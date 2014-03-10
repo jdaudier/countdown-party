@@ -55,6 +55,14 @@ footer a {
 footer a:hover {
   text-decoration: underline;
 }
+.credits {
+  margin-left: 0.4em;
+}
+@media only screen and (max-width: 998px) {
+  .credits {
+    display: block;
+  }
+}
 .heart {
   color: #ff8da1;
   margin-left: 0.4em;
