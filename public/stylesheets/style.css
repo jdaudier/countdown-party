@@ -142,7 +142,17 @@ footer a:hover {
 .ui.dimmer {
   line-height: 1.5;
 }
-/*Datepicker fix for dropdown menu*/
+/*****DATEPICKER FIX FOR DROPDOWN MENUS*****/
 .ui.form .picker__header {
   margin-top: 0.75em;
+}
+/***********ANIMATED CLOCK ICONS***********/
+.icon.is-check {
+  fill: #fe4365;
+}
+.icon.is-x10 {
+  width: 50px;
+  height: 50px;
+  margin-left: 0.35em;
+  fill: #778090;
 }

@@ -2,6 +2,9 @@ extends layout
 
 block content
   h1.logo Countdown Party
+    include clock-icon.html
+    svg.icon.is-x10(viewbox='0 0 32 32')
+      use(xlink:href='#clock-icon')
   form.ui.large.form.segment(action='/start')
     .field.input.ui.huge
       input(type='text', name='eventname', placeholder='Name of your event')
