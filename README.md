@@ -31,3 +31,5 @@ Countdown Party is a modern countdown timer to help you count down to any day. Y
 
 ### Inspiration
 * [It's Almost](http://itsalmo.st)
+* [Boomerang](http://www.boomerang.io)
+* [Circles](https://github.com/lugolabs/circles)
